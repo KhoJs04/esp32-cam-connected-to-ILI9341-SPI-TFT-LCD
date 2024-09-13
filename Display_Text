@@ -1,0 +1,29 @@
+// Displaying texts on ILI9431 TFT LCD
+#include <Arduino_GFX_Library.h>
+const byte TFT_SCK = 14;
+const byte TFT_MOSI = 13;
+const byte TFT_MISO = 12;
+const byte TFT_CS = 15;
+const byte TFT_DC = 2;
+
+// Define the SPI bus and the object for accessing the TFT
+Arduino_ESP32SPI bus = Arduino_ESP32SPI(
+  TFT_DC, TFT_CS, TFT_SCK, TFT_MOSI, TFT_MISO);
+Arduino_ILI9341 tft = Arduino_ILI9341(&bus);
+
+void setup(void) {
+  tft.begin(); // Initialize the TFT
+  tft.fillScreen(BLACK); // Clear screen with the blue color
+  tft.setTextSize(2); // Define the size of text
+  tft.setTextColor(WHITE); // Define the color of text
+  tft.setCursor(10, 10); // Determine the cursor position
+  tft.print("HELLO"); // Display “ILI9431”
+  tft.setTextSize(3);
+  tft.setTextColor(BLUE);
+  tft.setCursor(10, 50);
+  tft.print("WORLD");
+}  
+
+void loop() {
+
+}
