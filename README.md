@@ -26,6 +26,6 @@ Below is the pinout connection between the ESP32-CAM and ILI9341 TFT LCD.
 
 ![ESP32-CAM Pinout](https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2020/03/ESP32-CAM-pinout-new.png?w=1000&quality=100&strip=all&ssl=1)
 
-## Pinout for ILI9341 TFT LCD
+## Pinout for ILI9341 TFT LCD 
 
 ![ILI9341 TFT LCD Pinout](https://mytectutor.com/wp-content/uploads/2019/11/backside-components-768x396.png)
